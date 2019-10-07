@@ -1,0 +1,13 @@
+{
+    "name": "stagiaire/php_avancer",
+    "description": "Projet de formation en PHP orientée objet",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mathis Sentier",
+            "email": "mathis.sentier.ets@gmail.com"
+        }
+    ],
+    "require": {}
+}
