@@ -7,12 +7,20 @@ class Application
 {
     public function run(): Response
     {
+        $config = json_decode(file_get_contents(SRC_DIR.'/../config/database.json'));
+        $connexion = new DatabaseConnexion(
+            $config->dsn,
+            $config->username,
+            $config->password);
+
         $reader = new UrlReader();
         try {
             $id = $reader->parse();
-            $loader = new AnnonceLoader();
+            $loader = new AnnonceLoader($connexion);
             $annonce = $loader->load($id);
-            $response = new Response('Cette page est fonctionnel');
+            $result = file_get_contents(SRC_DIR.$annonce->annonce);
+            //echo $annonce;
+            $response = new Response($result);
         } catch (Exception $e) {
             $response = new Response('Cette page n\'existe pas', 404);
         }

@@ -8,8 +8,11 @@
 </head>
 <body>
     <h1>Singlespeed des années 80</h1>
-    <img src="singlespeed.jpg" alt="singlespeed">
+    <img src="../singlespeed.jpg" alt="singlespeed">
     <h3>Prix : 210€</h3>
     <p>Je vend se splendide single speed de la marque peugeot avec un cadre reynolds 531 blala...</p>
+    <?php 
+    echo $_SERVER;
+    ?>
 </body>
 </html>
