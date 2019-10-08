@@ -1,1 +1,4 @@
 /vendor/
+
+#credentials
+/01-Classy/config/database.json
