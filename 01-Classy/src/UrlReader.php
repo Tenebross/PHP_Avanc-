@@ -2,7 +2,7 @@
 
 class UrlReader
 {
-    public function parse(): intl_error_name
+    public function parse(): int
     {
         $urlParts = explode('/',trim($_SERVER['REQUEST_URI'],'/'));
         //$annonce = substr($url,-5,5);
