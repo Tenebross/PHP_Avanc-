@@ -4,6 +4,8 @@ class DatabaseConnexion
 {
     public function connect()
     {
-        new PDO(,'dawan','dawan');
+        public $id;
+        public $username;
+        public $password;
     }
 }
