@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class DatabaseConnexion extends Pdo
 {
     private $dsn;

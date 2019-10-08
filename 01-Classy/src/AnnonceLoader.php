@@ -1,7 +1,6 @@
 <?php
 
-require_once SRC_DIR.'/Annonce.php';
-require_once SRC_DIR.'/DatabaseConnexion.php';
+namespace App;
 
 class AnnonceLoader
 {

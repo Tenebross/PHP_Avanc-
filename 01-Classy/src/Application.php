@@ -1,7 +1,5 @@
 <?php
-require_once SRC_DIR.'/AnnonceLoader.php';
-require_once SRC_DIR.'/Response.php';
-require_once SRC_DIR.'/UrlReader.php';
+namespace App;
 
 class Application
 {
