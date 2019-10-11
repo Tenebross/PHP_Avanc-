@@ -1,6 +1,11 @@
 <?php
 namespace App;
 
+use App\database\AnnonceLoader;
+use App\database\DatabaseConnexion;
+use App\Exception\NotFoundException;
+use App\html\Annonce as AnnonceHtml;
+
 class Application
 {
     public function run(): Response

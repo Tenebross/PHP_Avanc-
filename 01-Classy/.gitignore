@@ -1,0 +1,4 @@
+/vendor/
+
+#credentials
+/config/database.json
